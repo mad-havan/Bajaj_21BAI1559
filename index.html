@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABCD123</title> <!-- Replace with your roll number -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .error {
+      color: red;
+    }
+    .result {
+      margin-top: 20px;
+    }
+    select {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JSON Processor</h1>
+  
+  <!-- Input Field for JSON -->
+  <textarea id="jsonInput" rows="5" cols="50" placeholder='Enter JSON input here'></textarea><br>
+
+  <!-- Submit Button -->
+  <button id="submitBtn">Submit</button>
+
+  <!-- Dropdown for selecting response data to display -->
+  <div id="options" style="display: none;">
+    <label for="filterOptions">Filter Options:</label>
+    <select id="filterOptions" multiple>
+      <option value="alphabets">Alphabets</option>
+      <option value="numbers">Numbers</option>
+      <option value="highest_lowercase_alphabet">Highest Lowercase Alphabet</option>
+    </select>
+  </div>
+
+  <!-- Error Message -->
+  <div id="error" class="error"></div>
+
+  <!-- Results -->
+  <div id="result" class="result"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
